@@ -1,0 +1,218 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Green-Blue-: hsl(217, 19%, 35%);
+    --Desaturated-Dark-: Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue-: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --ff-primary: 'Rubik', sans-serif;
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --ff-secondary: font-family: 'Raleway', sans-serif;
+    --fw-reg: 300;
+    --fw-bold: 700;
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-dark: #30303030;
+    --fs-h1: 1rem;
+    --fs-h2: 2.25rem;
+    --fs-body: 0.7rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25) 0.125em 0.125e 0.25em rgba(0, 0, 0, .15);
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    --radius: 1rem;
+    ;
+    --radius-section: .2rem;
+
+}
+
+@media screen and (min-width:800px) {
+    :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1rem;
+        --fs-h5: .7rem;
+        /* --fs-body:1rem; */
+    }
+}
+
+/* General style */
+
+body {
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    font-family: var(--ff-primary);
+
+}
+
+main {
+    padding: 1.5rem 1.5rem;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h4 {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+
+
+.mobile {
+    max-width: 90%;
+    background-color: var(--clr-light);
+    padding: 1em;
+    border-radius: var(--radius)
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    color: var(--clr-light)
+}
+
+.mobile-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: .5em;
+    background-color: var(--Light-Grayish-Violet);
+    padding: 0.4rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+
+.sent-images img {
+    width: 10%;
+}
+
+.text-message {
+    margin-top: 1rem;
+    padding: 0.5em;
+    max-width: max-content;
+    border-radius: var(--radius);
+
+}
+
+.you .text-message {
+    background-color: var(--clr-light);
+    margin-left: auto;
+    /* text-align: left; */
+
+}
+
+
+.me .text-message {
+    background-color: var(--Light-Grayish-Blue)
+}
+
+
+.you .sent-images {
+    margin-top: 1rem;
+    text-align: right;
+
+}
+
+.section-two-title {
+    text-align: center;
+}
+
+.price-message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .5rem;
+    color: var(--clr-light);
+    background-color: var(--Light-Magenta);
+    margin-top: .5rem;
+    border-radius: var(--radius);
+}
+
+/* .spin{
+    border-radius: 60%;
+    border-style: solid;
+} */
+.type-div {
+    width: 100%;
+}
+
+.type {
+    width: 90%;
+    border: none;
+    margin-top: 1.5rem;
+    padding: .5rem
+}
+
+.nav-container {
+    background-color: var(--Light-Magenta);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+
+}
+
+.fa-spinner {
+    align-self: center;
+}
+
+.speaker {
+    max-width: 70%;
+    padding: 0em 0em 2em 0em;
+    background-color: var(--clr-light);
+    position: relative;
+    bottom: 5px;
+    border-radius: var(--radius);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+@media screen and (min-width:800px) {
+    main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mobile {
+        margin-left: 4em;
+    }
+
+    .section-two {
+        max-width: 30%;
+        align-self: center;
+        flex-basis: 70%;
+    }
+
+    .section-one {
+        max-width: 30%;
+    }
+}
